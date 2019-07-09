@@ -1,0 +1,14 @@
+node {
+    
+    stage('scm') {
+    // some block
+    git 'https://github.com/MithunTechnologiesDevOps/maven-standalone-application.git'
+    }
+    stage('build') {
+    // some block
+     bat label: '', script: 'mvn package'
+    }
+    stage('artifacts') {
+    archiveArtifacts 'govarddan-night-build-pipeline\\target'
+    }
+}
