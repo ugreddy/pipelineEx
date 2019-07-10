@@ -9,6 +9,6 @@ node {
      bat label: '', script: 'mvn package'
     }
     stage('artifacts') {
-    archiveArtifacts 'C:/Program Files (x86)/Jenkins/workspace/govarddan-night-build-pipeline-1/gameoflife-web/target/*.war'
+    archiveArtifacts 'archiveArtifacts 'gameoflife-web/target/*.war''
     }
 }
