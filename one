@@ -2,7 +2,7 @@ node {
     
     stage('scm') {
     // some block
-    git 'https://github.com/MithunTechnologiesDevOps/maven-standalone-application.git'
+    git credentialsId: '62259f83-1c73-4f0d-915b-60bdc8219d90', url: 'https://github.com/ugreddy/pipelineEx.git'
     }
     stage('build') {
     // some block
