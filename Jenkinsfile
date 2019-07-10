@@ -11,4 +11,7 @@ node {
     stage('artifacts') {
     archiveArtifacts 'gameoflife-web/target/*.war'
     }
+    stage('reports') {
+    step([$class: 'JUnitResultArchiver', testResults: 'gameoflife-web/target/surefire-reports/*.xml'])
+    }
 }
