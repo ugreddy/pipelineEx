@@ -8,7 +8,5 @@ node {
     // some block
      bat label: '', script: 'mvn package sonar:sonar'
     }
-    stage('artifacts') {
-    archiveArtifacts 'archiveArtifacts 'gameoflife-web/target/*.war''
-    }
+    
 }
